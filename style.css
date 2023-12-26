@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.car_rent_section{
+    width: 100%;
+    height: auto;
+    background-color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0;
+}
+.car_container{
+    width: 90%;
+    display: flex;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* cars names */
+.car-name{
+    height: 450px;
+    overflow: auto;
+    min-width: 260px;
+    
+}
+.car-name::-webkit-scrollbar{
+    width: 0;
+}
+.car-select{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+.car{
+    width: 100%;
+}
+.car:hover{
+    background-color: #ff4d30;
+    color: #fff;
+}
+.car-select h2 {
+    background-color: #e9e9e9;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    padding-left: 1em;
+    justify-content: flex-start;
+    align-items: center;
+}
+#selected{
+    background-color: #ff4d30;
+    color: #fff;
+}
+/* rent detaile*/
+.rent-det{
+    min-width: 800px;
+    display: flex;
+    width: 100%;
+}
+.car-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.car-img img{
+    width: 500px;
+    height: auto;
+    margin-top: 60px;
+}
+.car-info{
+    height: fit-content;
+    min-width: 290px;
+
+}
+.info-card{
+    height: 100%;
+}
+.price h3, .price h2{
+    margin: 0;
+    color: #fff;
+}
+.price h3{
+    font-size: 1.4em;
+}
+.info-card li{
+    border-bottom: 2px solid #706f7b;
+    border-right: 2px solid #706f7b;
+    border-left: 2px solid #706f7b;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 12px;
+    text-align: center;
+}
+.info-card .price{
+    background-color: #ff4d30;
+    border: 0;
+}
+.price span{
+    width: 100%;
+}
+.card-item{
+    border-right: 2px solid #706f7b;
+}
+.rent-btn{
+    background-color: #ff4d30;
+    margin: 1em 0;
+    width: 100%;
+    padding: 1em;
+    border: 0;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 900;
+    opacity: 0.9;
+    box-shadow: 6px 6px 0 #efe9e9;
+}
+.rent-btn:hover{
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+    .car_container{
+        flex-wrap: wrap;
+    }
+    .car-name{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 910px) {
+    .rent-det{
+        flex-wrap: wrap;
+        min-width: auto;
+    }
+    .car-info{
+        min-width: 100%;
+    }
+    .car-img img{
+        width: 100%;
+    }
+}
