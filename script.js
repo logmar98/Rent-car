@@ -25,22 +25,28 @@ function changeInfo(carName) {
     var fuel = document.getElementById("fuel");
     var img = document.getElementById("car-img");
     var price = document.getElementById("price");
+    
+    let car1 = "https://i.pinimg.com/originals/56/f7/55/56f755ce852fc23de4ca0dd6e74361ea.png";
+    let car2 = "https://vinceheyy.com/wp-content/uploads/2017/07/ILLU-CAR-VW-GOLF-6-5K.png";
+    let car3 = "https://purepng.com/public/uploads/large/purepng.com-ford-mustangford-mustangford-falconcompact-carcars-1701527482048rotru.png";
+    let car4 = "https://purepng.com/public/uploads/large/purepng.com-blue-honda-accord-hybrid-carcarvehicletransporthonda-961524653570veqwm.png";
+    let car5 = "https://www.bmw.ca/content/dam/bmw/common/all-models/3-series/sedan/2022/navigation/bmw-3-series-sedan-lci-phev-modelfinder.png";
 
     switch (carName) {
         case 'volkswagen golf 6':
-            car = ["golf 6", "volkswagen", 2010, 4, "yes", "manual", "diesel", "car1", "100Dh"];
+            car = ["golf 6", "volkswagen", 2010, 4, "yes", "manual", "diesel", car1, "100Dh"];
             break;
         case 'Toyota Camry':
-            car = ["camry", "toyota", 2015, 2, "yes", "auto", "Gasoline", "car2", "150Dh"];
+            car = ["camry", "toyota", 2015, 2, "yes", "auto", "Gasoline", car2, "150Dh"];
             break;
         case 'Ford Mustang':
-            car = ["Mustang", "Ford", 2020, 3, "no", "auto", "diesel", "car3", "200Dh"];
+            car = ["Mustang", "Ford", 2020, 3, "no", "auto", "diesel", car3, "200Dh"];
             break;
         case 'Honda Accord':
-            car = ["Accord", "Honda", 2021, 6, "yes", "manual", "Gasoline", "car4", "250Dh"];
+            car = ["Accord", "Honda", 2021, 6, "yes", "manual", "Gasoline", car4, "250Dh"];
             break;
         case 'BMW 3 Series':
-            car = ["3 Series", "BMW", 2002, 5, "yes", "auto", "diesel", "car5", "300Dh"];
+            car = ["3 Series", "BMW", 2002, 5, "yes", "auto", "diesel", car5, "300Dh"];
             break;
     
         default:
@@ -54,7 +60,7 @@ function changeInfo(carName) {
     AC.innerHTML = car[4];
     transmission.innerHTML = car[5];
     fuel.innerHTML = car[6];
-    img.src = "image/" + car[7] + ".png";
+    img.src = car[7];
     price.innerHTML = car[8];
 
 }

@@ -25,7 +25,8 @@ ul{
 /* cars names */
 .car-name{
     height: 450px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     min-width: 260px;
     
 }
