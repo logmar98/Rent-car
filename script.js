@@ -64,3 +64,7 @@ function changeInfo(carName) {
     price.innerHTML = car[8];
 
 }
+
+
+const nav = document.querySelector(".nav-bar");
+
