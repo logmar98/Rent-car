@@ -1,3 +1,6 @@
+html{
+    scroll-behavior:smooth
+}
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +9,21 @@ body {
 ul{
     list-style: none;
 }
+.up{
+    background-color: #ff4d30;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    padding: 8px;
+}
+.up img{
+    width: 100%;
+    height: auto;
+}
 /*----------nav bar---------------*/
+
 a{
     text-decoration: none;
     color: #000;
@@ -20,6 +37,7 @@ a{
     border-bottom: 1px solid #000;
     position: relative;
     z-index: 9;
+
 }
 .nav-bar img{
     width: 100px;
@@ -48,6 +66,15 @@ a{
 #check{
     display: none;
 }
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
 @media only screen and (max-width: 500px) {
     .menu{
         display: block;
@@ -58,6 +85,7 @@ a{
         overflow: hidden;
         height: 30px;
     }
+    
     .nav-side{
         background-color: #e9e9e9;
         height: fit-content;
@@ -68,8 +96,13 @@ a{
     .open{
         height: fit-content;
     }
+    .checkbtn{
+        display: block;
+    }
+   
 }
 /*----------hero section---------------*/
+
 .hero-section{
     height: 80vh;
     background-image: url(image/main-img.jpg);
@@ -117,6 +150,9 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+}
+.open-time ul li span{
+    padding: 0 4px;
 }
 .day{
     border-right: 2px solid #000;
@@ -358,6 +394,11 @@ a{
     .contact-section{
         flex-wrap: wrap;
     }
+    .map{
+        width: 100%;
+        padding: 0 1em;
+    }
+
 }
 /***********contact us***********/
 
@@ -375,7 +416,7 @@ a{
 }
 iframe{
     height: 100%;
-    width: auto;
+    width: 100%;
 }
 
 .contact{

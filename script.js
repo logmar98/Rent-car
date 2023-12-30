@@ -66,5 +66,24 @@ function changeInfo(carName) {
 }
 
 
-const nav = document.querySelector(".nav-bar");
 
+function changeParentHeight() {
+    var parent = document.getElementById('nav-fun');
+    var checkbox = document.getElementById('check');
+    
+    if (checkbox.checked) {
+        parent.style.transition = ' 1s';
+        parent.style.height = '200px';
+
+        setTimeout(function() {
+          parent.style.transition = '';
+        }, 500); 
+      } else {
+        parent.style.transition = ' 1s';
+        parent.style.height = '30px';
+
+        setTimeout(function() {
+          parent.style.transition = '';
+        }, 500); 
+      }
+  }

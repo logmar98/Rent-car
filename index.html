@@ -5,21 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
 </head>
 <body>
 <!---------------nav bar-------------------->
 <nav class="nav-bar" id="nav-fun">
+
     <img src="image/rentlogo.webp" alt="">
-    <div class="menu"><img src="image/menu.png" id="menu" alt=""></div>
+    
+
+    <input type="checkbox" id="check" onchange="changeParentHeight()">
+    <label for="check">
+        <i class="menu"><img src="image/menu.png" id="menu" alt=""></i>
+    </label>
+
     <ul class="nav-side">
-        <li><a href="">Home</a></li>
-        <li><a href="">Rent now</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact us</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#rent-now">Rent now</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact us</a></li>
     </ul>
 </nav>
+
 <!---------------main section--------------->
-<header class="hero-section">
+<header class="hero-section" id="home">
+    <div class="up"><a href="#nav-fun"><img src="image/arrowup.png" alt=""></a></div>
     <div class="main-hero">
         <div class="hero-text">
             <h1>rentfo</h1>
@@ -57,12 +68,12 @@
         </div>
     </div>
     <div class="hero-btn">
-        <button class="contact-btn">contact us</button>
+        <button class="contact-btn"><a href="#contact">contact us</a></button>
         <span class="arrow-btn"></span>
     </div>
 </header>
 <!---------------benefits-------------------->
-    <div class="benefits">
+    <div class="benefits" id="about">
         <div class="sub-benft">
             <img src="image/time.png" alt="">
             <h2>More than 3 years of experience</h2>
@@ -77,8 +88,7 @@
         </div>
     </div>
 <!--------------car rent section------------>
-    <section class="car_rent_section">
-
+    <section class="car_rent_section" id="rent-now">
 
         <div class="car_container">
             <div class="car-name">
@@ -139,7 +149,7 @@
     </section>
 <!---------------contact us-------------------->
 
-    <div class="contact-section">
+    <div class="contact-section" id="contact">
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1397.3985670790282!2d-7.493166606001924!3d33.58992459092332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sma!4v1703886249381!5m2!1sen!2sma" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
