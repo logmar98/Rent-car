@@ -62,10 +62,19 @@ function changeInfo(carName) {
     fuel.innerHTML = car[6];
     img.src = car[7];
     price.innerHTML = car[8];
-
+    
 }
 
+function sendWhatsAppMessage() {
+    var phoneNumber = "+212608583498";
+    var model = document.getElementById("model").textContent;
+    var mark = document.getElementById("mark").textContent;
 
+    var message = `I am interested to rent ${mark} ${model}`;
+    var whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappLink, "_blank");
+}
 
 function changeParentHeight() {
     var parent = document.getElementById('nav-fun');
